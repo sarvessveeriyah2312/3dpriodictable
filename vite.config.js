@@ -2,6 +2,9 @@ import { defineConfig } from 'vite';
 import laravel, { refreshPaths } from 'laravel-vite-plugin';
 
 export default defineConfig({
+    build: {
+        outDir: 'public', // Specify your desired output directory here
+    },
     plugins: [
         laravel({
             input: [
